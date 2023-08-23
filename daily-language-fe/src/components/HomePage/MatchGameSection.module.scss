@@ -1,0 +1,34 @@
+@import '../../styles/variables.scss';
+
+.section {
+  max-width: 900px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $homepage-background-color;
+  padding: 44px 42px;
+  border: solid 2px $secondary-purple;
+  border-radius: 8px;
+  margin-bottom: 30px;
+  gap: 30px;
+  h3 {
+    font-size: 22px;
+    color: $header-primary-gray;
+    margin-bottom: 2px;
+  }
+  p {
+    font-size: 18px;
+    font-weight: 500;
+    color: $secondary-purple;
+  }
+}
+
+@media (max-width: 620px) {
+  .section {
+    flex-direction: column;
+    text-align: center;
+    padding: 44px 50px;
+  }
+}

@@ -1,0 +1,51 @@
+@import '../../styles/variables.scss';
+
+.header {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: flex-end;
+  background-color: $homepage-background-color;
+  .title {
+    white-space: nowrap;
+    margin-right: 24px;
+    p {
+      font-size: 18px;
+      font-weight: 500;
+      color: $header-secondary-gray;
+      margin-bottom: 2px;
+    }
+    h2 {
+      font-size: 30px;
+      letter-spacing: 1px;
+      color: $header-primary-gray;
+    }
+  }
+  .links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 10px;
+    .svg {
+      height: 24px;
+      fill: $header-secondary-gray;
+      margin-bottom: 2px;
+      cursor: pointer;
+    }
+    .svg:first-child {
+      margin-right: 24px;
+    }
+    .svg:hover {
+      fill: $header-primary-gray;
+    }
+  }
+}
+
+@media (max-width: 390px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 30px;
+  }
+}

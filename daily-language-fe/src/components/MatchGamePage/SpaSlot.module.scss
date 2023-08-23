@@ -1,0 +1,85 @@
+@import '../../styles/variables.scss';
+
+.slot {
+  position: relative;
+  display: block;
+  width: 270px;
+  border-radius: 8px;
+  margin: 6px auto 0 auto;
+  // will-change: opacity;
+  // opacity: 0;
+  // animation-name: fade-in;
+  // animation-duration: 500ms;
+  // animation-timing-function: ease;
+  // animation-fill-mode: forwards;
+  
+  // -webkit-perspective: 1000;
+  // -moz-perspective: 1000;
+  // -ms-perspective: 1000;
+  // perspective: 1000;
+  
+  // -webkit-backface-visibility: hidden;
+  // -moz-backface-visibility: hidden;
+  // -ms-backface-visibility: hidden;
+  // backface-visibility: hidden;
+  
+  .button {
+    position: absolute;
+    left: 0;
+    display: block;
+    width: 270px;
+    height: 56px;
+    font-family: 'Rubik';
+    font-size: 16px;
+    font-weight: 600;
+    color: $white-purple;
+    background-color: $primary-purple;
+    padding: 0 10px;
+    border: 2px solid $secondary-purple;
+    border-radius: 8px;
+    cursor: pointer;
+    // transition: top 30ms ease;
+    // overflow: hidden; /* hide the overflow text */
+    // white-space: nowrap; /* prevent the text from wrapping to a new line */
+    // text-overflow: ellipsis; /* replace the overflow text with an ellipsis */
+    // /* fix UI flicker on mobile Chrome */
+    
+    // -webkit-perspective: 1000;
+    // -moz-perspective: 1000;
+    // -ms-perspective: 1000;
+    // perspective: 1000;
+    
+    // -webkit-backface-visibility: hidden;
+    // -moz-backface-visibility: hidden;
+    // -ms-backface-visibility: hidden;
+    // backface-visibility: hidden;
+  }
+  .button-down {
+    top: 0px;
+  }
+  .button-up {
+    top: -4px;
+  }
+  .selected-color {
+    color: $white-purple;
+    border: 2px solid $white-purple;
+  }
+  .matchfound-color {
+    color: #70D0AE;
+    border: 2px solid #70D0AE;
+  }
+  .notamatch-color {
+    color: #D04B4B;
+    border: 2px solid #D04B4B;
+  }
+  .button-background {
+    width: 270px;
+    height: 56px;
+    background-color: $secondary-purple;
+    border-radius: 8px;
+  }
+}
+.placeholder {
+  width: 270px;
+  height: 62px;
+}

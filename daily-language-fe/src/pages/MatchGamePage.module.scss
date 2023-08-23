@@ -1,0 +1,11 @@
+@import '../styles/variables.scss';
+
+.page {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $vc-background-color;
+  padding: 30px;
+}

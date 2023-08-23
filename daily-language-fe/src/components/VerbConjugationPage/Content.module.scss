@@ -1,0 +1,78 @@
+@import '../../styles/variables.scss';
+
+.content {
+  position: relative;
+  max-width: 400px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  .position-abs {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    .infinitive {
+      font-size: 22px;
+      font-weight: 600;
+      color: $vc-blue;
+      margin-bottom: 5px;
+    }
+    .mood-tense-pronoun {
+      font-size: 16px;
+      font-weight: 500;
+      color: $vc-blue;
+      margin-bottom: 30px;
+    }
+    .english-phrase {
+      width: 100%;
+      height: 46px;
+      font-size: 20px;
+      font-weight: 600;
+      text-align: center;
+      color: $vc-white;
+      background-color: $vc-blue;
+      padding: 10px;
+      border-radius: 6px;
+      margin-bottom: 15px;
+    }
+    .input {
+      width: 100%;
+      height: 46px;
+      font-size: 20px;
+      font-weight: 400;
+      text-align: center;
+      color: $vc-white;
+      background-color: $vc-input-gray;
+      border: none;
+      border-radius: 6px;
+    }
+    .green-input {
+      font-weight: 500;
+      color: #46CB92;
+      border: 3px solid #46CB92;
+    }
+    .red-input {
+      font-weight: 500;
+      color: #ff4c4c;
+      border: 3px solid #ff4c4c;
+    }
+  }
+  .network-error {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    .message {
+      font-size: 22px;
+      font-weight: 600;
+      color: $primary-blue;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+  }
+}

@@ -1,0 +1,29 @@
+@import '../../styles/variables.scss';
+
+.back-button {
+  width: 110px;
+  align-self: flex-start;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  color: $vc-button-default-gray;
+  background-color: $vc-background-color;
+  padding: 10px 20px;
+  border: 2px solid $vc-button-default-gray;
+  border-radius: 4px;
+  cursor: pointer;
+  .arrow-left {
+    height: 22px;
+    fill: $vc-button-default-gray;
+    margin-right: 6px;
+  }
+}
+.back-button:hover {
+  color: $vc-button-highlight-gray;
+  border: 2px solid $vc-button-highlight-gray;
+  .arrow-left {
+    fill: $vc-button-highlight-gray;
+  }
+}

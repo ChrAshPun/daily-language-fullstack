@@ -1,0 +1,85 @@
+@import '../../styles/variables.scss';
+
+.hud {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  .hud-score {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 22px;
+    font-weight: 500;
+    color: $vc-button-default-gray;
+    div {      
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin-right: 18px;
+      .check-icon,
+      .xmark-icon {
+        height: 24px;
+        margin-right: 5px;
+      }
+      .check-icon {
+        height: 24px;
+        fill: $primary-green;
+      }
+      .xmark-icon {
+        fill: $primary-red;
+        margin-top: 2px;
+      }
+    }
+  }
+  .drop-down {
+    position: relative;
+    .filter-by {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      font-size: 14px;
+      font-weight: 600;
+      white-space: nowrap;
+      color: $vc-button-default-gray;
+      background-color: $vc-background-color;
+      padding: 8px 20px;
+      border: 2px solid $vc-button-default-gray;
+      border-radius: 4px;
+      cursor: pointer;
+      .chevron-icon {
+        height: 16px;
+        fill: $vc-button-default-gray;
+        padding-left: 6px;
+      }
+    }
+    .filter-options {
+      position: absolute;
+      top: 34px;
+      left: 108px;
+      left: 0px;
+      width: 124px;
+      height: 150px;
+      font-size: 14px;
+      font-weight: 600;
+      white-space: nowrap;
+      color: $vc-button-default-gray;
+      background-color: $vc-background-color;
+      padding: 4px 0;
+      border: 2px solid $vc-button-default-gray;
+      border-radius: 4px;
+      list-style: none;
+      overflow-y: auto;
+      cursor: pointer;
+      li {
+        padding: 5px 16px;
+      }
+      li:hover {
+        color: $vc-button-highlight-gray;
+        background-color: $vc-button-default-gray;
+      }
+    }
+  }
+}

@@ -1,0 +1,48 @@
+@import '../../styles/variables.scss';
+
+.button-bg {
+  position: relative;
+  width: 240px;
+  height: 50px;
+  border-radius: 8px;
+  .purple {
+    color: $white-purple;
+    background-color: $primary-purple;
+    border: 2px solid $secondary-purple;
+  }
+  .purple:hover {
+    background-color: $button-highlight-purple;
+  }
+  .blue {
+    color: $white-blue;
+    background-color: $primary-blue;
+    border: 2px solid $secondary-blue;
+  }
+  .blue:hover {
+    background-color: $button-highlight-blue;
+  }
+  button {
+    position: absolute;
+    display: block;
+    width: 240px;
+    height: 50px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: top 50ms ease;
+  }
+  .button-up {
+    top: -6px;
+  }
+  .button-down {
+    top: 0px;
+  }
+}
+.purple-bg {
+  background-color: $secondary-purple;
+}
+.blue-bg {
+  background-color: $secondary-blue;
+}
+
